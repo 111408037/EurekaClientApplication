@@ -11,3 +11,8 @@ eureka:
       default-zones: http://localhost:8761/eureka
     fetch-registry: true
     register-with-eureka: true
+
+management:
+  endpoints:
+    web:
+      expose : "*"

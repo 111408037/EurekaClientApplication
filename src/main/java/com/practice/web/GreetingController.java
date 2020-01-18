@@ -1,4 +1,4 @@
-package web;
+package com.practice.web;
 
 import com.netflix.discovery.EurekaClient;
 import org.springframework.beans.factory.annotation.Autowired;

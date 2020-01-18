@@ -1,2 +1,2 @@
-app\Application.class
-web\Controller.class
+com\practice\app\Application.class
+com\practice\web\GreetingController.class

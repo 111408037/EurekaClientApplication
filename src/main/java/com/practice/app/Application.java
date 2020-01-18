@@ -1,4 +1,4 @@
-package app;
+package com.practice.app;
 
 
 import org.springframework.boot.SpringApplication;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableEurekaClient
-@ComponentScan(basePackages = {})
+@ComponentScan(basePackages = {"com.practice"})
 public class Application {
 
     public static void main(String[] args) {
