@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Controller {
+public class GreetingController {
 
     @Autowired
     private EurekaClient eurekaClient;
@@ -18,8 +18,8 @@ public class Controller {
     @Value("${server.port}")
     private String port;
 
-    @RequestMapping("/getServiceName")
-    public String getServiceName(){
+    @RequestMapping("/greeting")
+    public String greeting(){
         return String.format("Hello from %s running gon port %s!!", eurekaClient.getApplication(appName).getName(), port);
     }
 
