@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-client-application
+
+server:
+  port: 8762
+
+eureka:
+  client:
+    service-url:
+      default-zones: http://localhost:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
